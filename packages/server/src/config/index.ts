@@ -1,1 +1,0 @@
-export { HasteConfiguration } from './hasteConfiguration';
