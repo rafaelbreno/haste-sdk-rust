@@ -1,12 +1,7 @@
 pub mod models {
     use chrono::{DateTime, Utc};
     pub mod arcade;
-
-    // HasteEnvironment
-    pub enum HasteEnvironment {
-        Production,
-        NonProduction,
-    }
+    pub mod haste_environment;
 
     // Leader
     pub struct Leader {
@@ -281,6 +276,8 @@ pub mod models {
             leaderboard_id,
         }
     }
+
+    use haste_environment::HasteEnvironment;
 
     // TokenRequest
     pub struct TokenRequest {
