@@ -13,4 +13,9 @@ pub mod models {
            description: String::from(""),
        } 
     }
+
+    pub enum HasteEnvironment {
+        Production,
+        NonProduction,
+    }
 }
