@@ -2,28 +2,8 @@ pub mod models {
     use chrono::{DateTime, Utc};
     pub mod arcade;
     pub mod haste_environment;
+    pub mod leader;
 
-    // Leader
-    pub struct Leader {
-        pub player_id: String,
-        pub score: u64,
-        pub name: Option<String>,
-        pub avatar: Option<String>,
-    }
-
-    pub fn new_leader(
-            player_id: String,
-            score: u64,
-            name: Option<String>, 
-            avatar: Option<String>,
-        ) -> Leader {
-        Leader {
-            player_id,
-            score,
-            name,
-            avatar,
-        }
-    }
 
     // Leaderboard
     pub struct Leaderboard {
@@ -233,6 +213,7 @@ pub mod models {
         Player { id }
     }
 
+    use leader::Leader;
 
     // Score 
     pub struct Score {
