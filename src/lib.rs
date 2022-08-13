@@ -6,15 +6,7 @@ pub mod models {
     pub mod game;
     pub mod payout;
     pub mod play;
-
-    // Player
-    pub struct Player {
-        pub id: String,
-    }
-
-    pub fn new_player (id: String) ->Player {
-        Player { id }
-    }
+    pub mod player;
 
     use leader::Leader;
 
