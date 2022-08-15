@@ -8,7 +8,7 @@ pub struct Game {
     pub developer_info: Option<String>,
     pub tag_line: Option<String>,
     pub url: String,
-    pub leaderboards: Option<[Leaderboard; 0]>, 
+    pub leaderboards: Vec<Leaderboard>, 
     pub player_id: String,
 }
 
@@ -20,7 +20,7 @@ pub fn new_game(
         developer_info: Option<String>,
         tag_line: Option<String>,
         url: String,
-        leaderboards: Option<[Leaderboard; 0]>, 
+        leaderboards: Vec<Leaderboard>, 
         player_id: String,
     ) -> Game {
     Game {
